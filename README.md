@@ -56,7 +56,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-1    | No                  | 10.0.0.1-254         |
 | Web-2    | No                  | 10.0.0.1-254         |
 | Web-3    | No                  | 10.0.0.1-254         |
-| Elk Server    | No                  | 10.0.0.1-254         |
+| Elk      | No                  | 10.0.0.1-254         |
 
 ### Elk Configuration
 
