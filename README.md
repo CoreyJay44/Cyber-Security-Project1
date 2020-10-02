@@ -73,7 +73,8 @@ The following screenshot displays the result of running `docker ps` after succes
 ![alt text](https://github.com/CoreyJay44/Cyber-Security-Project1/blob/main/Images/Docker%20ps.PNG "Docker ps")
 Elk Playbook is duplicated below:
 
-```---
+```
+---
 - name: Configure Elk VM with Docker
   hosts: elkservers
   remote_user: RedFive
