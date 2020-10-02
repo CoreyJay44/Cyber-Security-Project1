@@ -72,7 +72,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![alt text](https://github.com/CoreyJay44/Cyber-Security-Project1/blob/main/Images/Docker%20ps.PNG "Docker ps")
 Elk Playbook is duplicated below:
-`---
+
+```---
 - name: Configure Elk VM with Docker
   hosts: elkservers
   remote_user: RedFive
@@ -122,7 +123,8 @@ Elk Playbook is duplicated below:
         published_ports:
           - 5601:5601
           - 9200:9200
-          - 5044:5044`
+          - 5044:5044
+```
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
