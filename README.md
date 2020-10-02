@@ -21,22 +21,23 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly accessible, in addition to restricting traffic to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting inbound access to the network.
 - Load Balancers protect the virtual network against DDoS attacks by shifting attack traffic between the virtual servers. 
 - The advantage of the Jump-Box is that it is "hidden" from the public. It can only be accessed by the administrator to perform tasks on the rest of the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VM Network and system metrics.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name     | Function  | IP Address | Operating System |
+|----------|-----------|------------|------------------|
+| Jump Box | Gateway   | 10.0.0.4   | Linux            |
+| Web-1    | Web Server|            |                  |
+| Web-2    |          |            |                  |
+| Web-3    |          |            |                  |
+| Elk      |          |            |                  |
 
 ### Access Policies
 
