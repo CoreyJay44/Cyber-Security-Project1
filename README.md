@@ -26,8 +26,8 @@ Load balancing ensures that the application will be highly available, in additio
 - The advantage of the Jump-Box is that it is "hidden" from the public. It can only be accessed by the administrator to perform tasks on the rest of the network.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file systems of the VM Network and system metrics.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing.
+- Metricbeat collects and logs the system metrics of your network. e.g. CPU and Memory usage
 
 The configuration details of each machine may be found below.
 
