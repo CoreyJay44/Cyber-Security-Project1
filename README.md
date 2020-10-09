@@ -154,9 +154,17 @@ SSH into the control node and follow the steps below:
     10.0.0.5
     10.0.0.6
     10.0.0.7
-   [elkserver]
+   [elkservers]
     10.1.0.4
 ```
+To run the playbooks and install Elk, Filebeat, and Metric beat run the following commands:
+```
+cd /etc/ansible
+ansible-playbook elk-playbook.yml
+ansible-playbook filebeat-playbook.yml
+ansible-playbook metricbeat-playbook.yml 
+```
+
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
