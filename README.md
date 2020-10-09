@@ -97,7 +97,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 - Copy the .yml files to `/etc/ansible` directory.
-- Update the hosts file to be as follows.
+- Update the hosts file to be as follows. This will assign the VM servers to their server groups for the Ansible Playbooks. 
 ``` 
    [webservers]
     10.0.0.5
@@ -115,11 +115,3 @@ ansible-playbook metricbeat-playbook.yml
 ```
 
 - Then, run: `curl http://10.0.0.8:5601`. (You can also use the loadbalancer's public IP address) This is the address of Kibana. If the installation succeeded, this command should print HTML to the console.
-
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
