@@ -147,7 +147,7 @@ The .yml Playbooks used can be found [here](https://github.com/CoreyJay44/Cyber-
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the .yml files to /etc/ansible directory.
+- Copy the .yml files to `/etc/ansible` directory.
 - Update the hosts file to be as follows.
 ``` 
    [webservers]
@@ -165,8 +165,7 @@ ansible-playbook filebeat-playbook.yml
 ansible-playbook metricbeat-playbook.yml 
 ```
 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
+- Then, run: `curl http://10.0.0.8:5601`. This is the address of Kibana. If the installation succeeded, this command should print HTML to the console.
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
