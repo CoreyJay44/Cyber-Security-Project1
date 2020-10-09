@@ -65,8 +65,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
 The playbook implements the following tasks:
 - First we install docker on all network machines so they will be able to recieve and install containers. 
-- ...
-- ...
+- Ansible is installed on the Jump Box VM to distribute containers to other VMs on the network. 
+- Ansible playbooks are used to install the ELK stack container on the ELK server and a 'Beats' containers on the Web servers
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
