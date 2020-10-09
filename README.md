@@ -147,8 +147,14 @@ The .yml Playbooks used can be found [here](https://github.com/CoreyJay44/Cyber-
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the .yml files to /etc/ansible directory.
+- Update the hosts file to be as follows.
+  -[webservers]
+    10.0.0.5
+    10.0.0.6
+    10.0.0.7
+  -[elkserver]
+    10.1.0.4
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
