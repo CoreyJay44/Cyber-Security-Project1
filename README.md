@@ -149,7 +149,8 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the .yml files to /etc/ansible directory.
 - Update the hosts file to be as follows.
-``` [webservers]
+``` 
+   [webservers]
     10.0.0.5
     10.0.0.6
     10.0.0.7
