@@ -114,4 +114,4 @@ ansible-playbook filebeat-playbook.yml
 ansible-playbook metricbeat-playbook.yml 
 ```
 
-- Then, run: `curl http://10.0.0.8:5601`. (You can also use the loadbalancer's public IP address) This is the address of Kibana. If the installation succeeded, this command should print HTML to the console.
+- Then, run: `curl http://10.0.0.8:5601`. (You can also use the loadbalancer's public IP address) This is the address of Kibana. If the installation succeeded, this command should print HTML to the console. 
